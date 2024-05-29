@@ -5,11 +5,8 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Class">
-      <UniqueIdentifier>{d88249ad-861c-4f2d-be48-ddbc5966215c}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ChatClient.cpp" />
+    <ClCompile Include="ServerConsoleExe.cpp" />
   </ItemGroup>
 </Project>
