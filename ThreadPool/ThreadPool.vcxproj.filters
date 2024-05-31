@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="String">
+      <UniqueIdentifier>{13d5aa60-8328-4d46-8800-21101e025239}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Thread">
+      <UniqueIdentifier>{13db7c60-9fff-46d9-9440-15183138ebce}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PrecompileHeader.h" />
+    <ClInclude Include="IOCPThreadPool.h">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="IOCPThread.h">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadString.h">
+      <Filter>String</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PrecompileHeader.cpp" />
+    <ClCompile Include="IOCPThread.cpp">
+      <Filter>Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="IOCPThreadPool.cpp">
+      <Filter>Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadString.cpp">
+      <Filter>String</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

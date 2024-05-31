@@ -1,5 +1,4 @@
-﻿#include <iostream>
-#include <ChatServer/ServerCore.h>
+﻿#include "PrecompileHeader.h"
 
 int main()
 {
@@ -15,7 +14,7 @@ int main()
 	{
 		std::cin >> PortNumber;
 	
-		if (49152 > PortNumber || 65536 < PortNumber)
+		if (49152 <= PortNumber && 65536 >= PortNumber)
 		{
 			break;
 		}

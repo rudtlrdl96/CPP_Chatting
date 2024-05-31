@@ -1,12 +1,5 @@
 #pragma once
 
-#include <WS2tcpip.h>
-#include <WinSock2.h>
-#include <Windows.h>
-
-// 윈도우 서버 사용을 위한 라이브러리
-#pragma comment (lib, "ws2_32") 
-
 class ServerCore
 {
 public:
@@ -22,9 +15,7 @@ public:
 	void Initialize(const USHORT portNumber);
 
 	// 패킷 처리 함수
-	inline void Update()
-	{
-	}
+	void Update();
 
 	// 서버가 닫혔는지 반환한다
 	bool IsCloseServer() const

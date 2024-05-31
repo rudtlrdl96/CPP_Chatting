@@ -1,7 +1,10 @@
+#include "PrecompileHeader.h"
 #include "ServerCore.h"
 
 #include <iostream>
 #include <assert.h>
+
+#include "ThreadPool/IOCPThreadPool.h"
 
 const int ServerCore::PORT_NUMBER = 10;
 
@@ -15,6 +18,9 @@ ServerCore::~ServerCore()
 
 void ServerCore::Initialize(const USHORT portNumber)
 {
+	// IOCP 스레드 풀 생성
+	IOCPThreadPool::CreateThreadPool("Server Thread", 0);
+
 	if (0 != WSAStartup(MAKEWORD(2, 2), &WsaData))
 	{
 		std::cout << "Fail WSAStartup!!! \n";
@@ -32,4 +38,8 @@ void ServerCore::Initialize(const USHORT portNumber)
 
 	// 서버 열림
 	bIsServerOpen = true;
+}
+
+void ServerCore::Update()
+{
 }

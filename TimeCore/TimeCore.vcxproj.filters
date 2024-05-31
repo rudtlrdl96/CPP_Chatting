@@ -7,10 +7,11 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ServerConsoleExe.cpp" />
-    <ClCompile Include="PrecompileHeader.cpp" />
+    <ClInclude Include="TimeCore.h" />
+    <ClInclude Include="PrecompileHeader.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="PrecompileHeader.h" />
+    <ClCompile Include="TimeCore.cpp" />
+    <ClCompile Include="PrecompileHeader.cpp" />
   </ItemGroup>
 </Project>
